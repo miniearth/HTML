@@ -1,0 +1,246 @@
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>INTERVIEW</title>
+  <meta name="interview" content="나가노 아키 교수님의 인터뷰 페이지">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&amp;display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <style>
+    #sideBar {
+      position: sticky;
+      /* 스크롤시 따라오게 함 */
+      top: 80px;
+      height: calc(100vh - 80px);
+      overflow-y: auto;
+      flex: 1;
+    }
+  </style>
+
+</head>
+
+
+<body>
+  <div id="news" class="big-bg">
+    <header class="page-header wrapper">
+      <h1><a href="main.html"><img class="logo custom-logo" src="images/logo.png" alt="메인"></a></h1>
+      <nav>
+        <ul class="main-nav">
+          <li id="linkbaito"><a href="profile.html"><span id="textprofile">プロフィール</span></a></li>
+          <li id="linkkonomi"><a href="konomi.html"><span id="textkonomi">好み</span></a></li>
+          <li id="linkzinsei"><a href="zinsei.html"><span id="textzinsei">人生</span></a></li>
+          <li id="linkdaigaku"><a href="daigaku.html"><span id="textdaigaku">大学</span></a></li>
+          <li id="linkkaisya"><a href="kaisya.html"><span id="textkaisya">会社</span></a></li>
+          <li id="linkmatome"><a href="matome.html"><span id="textmatome">まとめ</span></a></li>
+        </ul>
+      </nav>
+      <script>
+        // 자바스크립트 코드를 여기에 포함시킬 수 있습니다.
+        // Get elements by their IDs
+        const textprofile = document.getElementById('textprofile');
+        const textkonomi = document.getElementById('textkonomi');
+        const textzinsei = document.getElementById('textzinsei');
+        const textdaigaku = document.getElementById('textdaigaku');
+        const textkaisya = document.getElementById('textkaisya');
+        const textmatome = document.getElementById('textmatome');
+
+
+        // Add event listeners for the second pair (プロフィール to 프로필)
+        textprofile.addEventListener('mouseover', function () {
+          textprofile.innerHTML = '프로필';  // Change text to '프로필'
+        });
+        textprofile.addEventListener('mouseout', function () {
+          textprofile.innerHTML = 'プロフィール';  // Change text back to 'プロフィール'
+        });
+
+
+        // Add event listeners for the first pair (好み to 호불호)
+        textkonomi.addEventListener('mouseover', function () {
+          textkonomi.innerHTML = '호불호';  // Change text to '호불호'
+        });
+        textkonomi.addEventListener('mouseout', function () {
+          textkonomi.innerHTML = '好み';  // Change text back to '好み'
+        });
+
+
+        // Add event listeners for the second pair (人生 to 인생)
+        textzinsei.addEventListener('mouseover', function () {
+          textzinsei.innerHTML = '인생';  // Change text to '인생'
+        });
+        textzinsei.addEventListener('mouseout', function () {
+          textzinsei.innerHTML = '人生';  // Change text back to '人生'
+        });
+
+
+        // Add event listeners for the second pair (大学 to 대학)
+        textdaigaku.addEventListener('mouseover', function () {
+          textdaigaku.innerHTML = '대학';  // Change text to '대학'
+        });
+        textdaigaku.addEventListener('mouseout', function () {
+          textdaigaku.innerHTML = '大学';  // Change text back to '大学'
+        });
+
+
+        // Add event listeners for the second pair (会社 to 회사)
+        textkaisya.addEventListener('mouseover', function () {
+          textkaisya.innerHTML = '회사';  // Change text to '회사'
+        });
+        textkaisya.addEventListener('mouseout', function () {
+          textkaisya.innerHTML = '会社';  // Change text back to '会社'
+        });
+
+
+        // Add event listeners for the second pair (まとめ to 마토메)
+        textmatome.addEventListener('mouseover', function () {
+          textmatome.innerHTML = '마무리';  // Change text to '마토메'
+        });
+        textmatome.addEventListener('mouseout', function () {
+          textmatome.innerHTML = 'まとめ';  // Change text back to 'まとめ'
+        });
+      </script>
+    </header>
+  </div><!-- /#home -->
+  <div class="wrapper">
+    <h2 class="page-title show">교수님의 회사 생활에 대하여 질문해 보았습니다.</h2>
+  </div><!-- /.wrapper -->
+  <div class="news-contents wrapper">
+    <article class="kaisyanaiyou show">
+      <header class="post-info">
+
+
+      </header>
+      <img src="images/ntt.png" alt="회사">
+      <h3 class="it-kikkake" id="it-kikkake"> IT기업에 들어간 계기에 대해 알려주세요. </h3>
+      <p>
+        &nbsp;&nbsp;대학에서 공부한 것 중에 제 안에 남아있는 게 없기 때문에. 전문성이라든가 남아있지 않으니까, 저도 그건 자각하고 있어서 이대로 연구원이 되는 건 무리라고 생각했습니다. 되지 않는
+        것을 하는 건 괴로우니까. 그래서 it 기업에 들어갔습니다. 그런 경위 입니다.
+
+      </p>
+
+      <h3 class="sigoto" id="sigoto"> it기업에서는 무엇을 하셨나요? </h3>
+      <p>
+        &nbsp;&nbsp;저는 약 6년 정도 있었는데요, 실증 실험을 하는 팀이었어요. 실증 시험이라는 것은 실제로 세상에 내기 전에, 프로토타입이라든가를 만들어서 연구하는 팀이에요. 실제로 될지 안
+        될지를 같은 것을 조사해서 만들어 보고 해보는 그런 실증 실험의 팀이었어요.
+        그러니까, 실제로 고객의 니즈가 있어서 그 사람의 요구에 부응해서 제품을 만드는 그런 팀이 아니었어요. <br>&nbsp;&nbsp;어느 쪽이냐고 하면 연구. 실증 실험을 하는 것에도 고객님이 있어서,
+        실증 실험을 하고 싶다고 말하는 고객님도 있었어요.
+        예를 들어서, 일본우선이라든가 우체국이라든가, 화물이라든가 그런 것을 운반할 때 제가 했던 것은 IC 태그, RFID라고 하는 무선 IC 태그를 물건 같은 곳에 부착해서, 물품관리를 하거나, 그래서
+        위치정보나 여러 정보를 취득할 수 있지 않습니까. 지금 말하는 IoT에요. 그것의 선구 같은 실험을 했었습니다.
+        <br>&nbsp;&nbsp;들으면 굉장하지만, 거기에 왜 제가 배정이 되었는지, 정말로 수수께끼. 그도 그럴게 제 전공은 과학이었으니까요. 케미스트리죠? 별로 관계없는 이공계니까 거의 초심자로 들어가
+        있었거든요. 프로그래밍 경험 0이에요.
+        그래서, 들어가서 연수로 처음으로 JAVA라든지 했으니까. 그때까지는 이 게임에도, 일단 IT 프로그래밍 과목은 하나 정도 있었어요, 포트란이라든가 알고 있어요. 포트란이라든가 코볼이라든가, 굉장히
+        오래된 언어를 약간 계산하는 정도밖에 하지 않았어요. <br>그래서, 음. 기업이 무엇을 보고 그곳에 배정이 되었는지는 아직 모르겠어요.
+        덧붙여서 제가 늘 복이 많다고 느끼는데, 실증 실험 팀이 좋았던 것은 해외 출장이 있었어요. 보통 같으면 시스템을 만드는 데에, 개발부라면, 출장은 가지 못해요. 사내에서 만들거나 또는 고객의 사무실에
+        간다던가. 그래도 실증 실험이니까, 꽤나 글로벌로지스틱스의 실증 실험이라든가 했기 때문에, 중국이나, 미국에 가는 기회가 있었어요.
+        <br>&nbsp;&nbsp;IT에서 여러 기술을 쓸 때 사용서라는 게 있어서, 스페시피케이션 이라는 사용서가 있어서, 그 사용서가 아직 공개되지 않았을 때 새로운 물건 같은 것을 조사해서 그것을
+        이용해서 실증 실험을 했는데, 전부 영어였어요.
+        그래서 영어는 물론 성적이 나빴으니까, 영어 같은 거 공부하지 않았고, 제 영어는 고교, 고교수험에서 끝났어요. 그래도 하지않으면 안되니까. 사용서를 일본어로 번역하는 작업이나, 일단 해외와의 교류를,
+        영어로 메일을 쓴다던가, 어쩔 수가 없었기에 했습니다. 그래도 그건 매우 좋은 경험이었다고 생각해요.
+
+
+
+      </p>
+
+      <h3 class="intansip" id="intansip"> 기업에 취직하시기 전에 인턴십의 경험 있으신가요? </h3>
+      <p>
+        &nbsp;&nbsp;없네요. 인턴십은 없지만 ob 방문, og 방문은 몇 번 했어요. 반드시 했어요. 반드시 하지 않으면 안되는 그런 게 있었어요. 내 안에서. 그건 선배에게 전부 배우는 거애요.
+        취직 활동을 어떻게 할까. 그렇게 질문을 하니, ob 방문, og 방문은 반드시 하지 않으면 안되고, 지망도가 높은 회사라면 반드시 하는 게 좋다고 들었어요. 그래서 대학의 아는 사람 중, IT기업에
+        들어간 선배 중에서 소개받기도 하고, 그 기업에 지원하지 않아도, IT기업에 대해 여러가지 알기 위해서 OB 방문이란 것을 했습니다.
+      </p>
+
+
+
+
+
+    </article>
+
+    <aside id="sideBar" class="sideBar">
+      <h3 class="sub-title">카테고리</h3>
+      <ul class="sub-menu">
+        <li><a href="#it-kikkake">IT기업에 들어간 계기</a></li>
+        <li><a href="#sigoto">IT기업에서 한 일</a></li>
+        <li><a href="#intansip">입사 전 인턴십 경험</a></li>
+
+      </ul>
+    </aside>
+  </div><!-- /.news-contents -->
+
+
+  <footer>
+    <div class="wrapper">
+      <p class="footer"><small>© 2023 永野 亜季</small></p>
+    </div>
+
+
+  </footer>
+  <!-- 카테고리 클릭시 이동을 부드럽게 하는 애니메이션 스크립트-->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('.sub-menu a').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          const targetElement = document.querySelector(this.getAttribute('href'));
+          smoothScroll(targetElement);
+        });
+      });
+
+      function smoothScroll(targetElement) {
+        const targetPosition = targetElement.offsetTop;
+        const startPosition = window.scrollY;
+        const distance = targetPosition - startPosition;
+        const duration = 800;
+
+        let start = null;
+
+        function step(timestamp) {
+          if (!start) start = timestamp;
+          const progress = timestamp - start;
+
+          window.scrollTo(0, easeInOutCubic(progress, startPosition, distance, duration));
+
+          if (progress < duration) {
+            requestAnimationFrame(step);
+          }
+        }
+
+        requestAnimationFrame(step);
+      }
+
+      function easeInOutCubic(t, b, c, d) {
+        t /= d / 2;
+        if (t < 1) return c / 2 * t * t * t + b;
+        t -= 2;
+        return c / 2 * (t * t * t + 2) + b;
+      }
+    });
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+          observer.unobserve(entry.target);
+        }
+      });
+    });
+
+    const profileSection = document.querySelector('.kaisyanaiyou');
+    const ptitle = document.querySelector('.page-title');
+    observer.observe(profileSection);
+    observer.observe(ptitle);
+  </script>
+
+
+
+
+</body>
+
+</html>
