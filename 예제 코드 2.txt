@@ -1,0 +1,144 @@
+<html lang="ko"><head>
+    <meta charset="UTF-8">
+    <title>INTERVIEW</title>
+    <meta name="interview" content="나가노 아키 교수님의 인터뷰 페이지">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&amp;display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="news" class="big-bg">
+      <header class="page-header wrapper">
+        <h1><a href="main.html"><img class="logo custom-logo" src="images/logo.png" alt="메인"></a></h1>
+        <nav>
+          <ul class="main-nav">
+            <li id="linkbaito"><a href="profile.html"><span id="textprofile">プロフィール</span></a></li>
+            <li id="linkkonomi"><a href="konomi.html"><span id="textkonomi">好み</span></a></li>
+            <li id="linkzinsei"><a href="zinsei.html"><span id="textzinsei">人生</span></a></li>
+            <li id="linkdaigaku"><a href="daigaku.html"><span id="textdaigaku">大学</span></a></li>
+            <li id="linkkaisya"><a href="kaisya.html"><span id="textkaisya">会社</span></a></li>
+            <li id="linkmatome"><a href="matome.html"><span id="textmatome">まとめ</span></a></li>
+          </ul>
+        </nav>
+        <script>
+          // 자바스크립트 코드를 여기에 포함시킬 수 있습니다.
+          // Get elements by their IDs
+          const textprofile = document.getElementById('textprofile');
+          const textkonomi = document.getElementById('textkonomi');
+          const textzinsei = document.getElementById('textzinsei');
+          const textdaigaku = document.getElementById('textdaigaku');
+          const textkaisya = document.getElementById('textkaisya');
+          const textmatome = document.getElementById('textmatome');
+      
+          
+          // Add event listeners for the second pair (プロフィール to 프로필)
+          textprofile.addEventListener('mouseover', function() {
+            textprofile.innerHTML = '프로필';  // Change text to '프로필'
+          });
+          textprofile.addEventListener('mouseout', function() {
+            textprofile.innerHTML = 'プロフィール';  // Change text back to 'プロフィール'
+          });
+
+          
+          // Add event listeners for the first pair (好み to 호불호)
+          textkonomi.addEventListener('mouseover', function() {
+            textkonomi.innerHTML = '호불호';  // Change text to '호불호'
+          });
+          textkonomi.addEventListener('mouseout', function() {
+            textkonomi.innerHTML = '好み';  // Change text back to '好み'
+          });
+      
+      
+          // Add event listeners for the second pair (人生 to 인생)
+          textzinsei.addEventListener('mouseover', function() {
+            textzinsei.innerHTML = '인생';  // Change text to '인생'
+          });
+          textzinsei.addEventListener('mouseout', function() {
+            textzinsei.innerHTML = '人生';  // Change text back to '人生'
+          });
+      
+      
+          // Add event listeners for the second pair (大学 to 대학)
+          textdaigaku.addEventListener('mouseover', function() {
+            textdaigaku.innerHTML = '대학';  // Change text to '대학'
+          });
+          textdaigaku.addEventListener('mouseout', function() {
+            textdaigaku.innerHTML = '大学';  // Change text back to '大学'
+          });
+      
+      
+         // Add event listeners for the second pair (会社 to 회사)
+          textkaisya.addEventListener('mouseover', function() {
+            textkaisya.innerHTML = '회사';  // Change text to '회사'
+          });
+          textkaisya.addEventListener('mouseout', function() {
+            textkaisya.innerHTML = '会社';  // Change text back to '会社'
+          });
+      
+      
+          // Add event listeners for the second pair (まとめ to 마토메)
+          textmatome.addEventListener('mouseover', function() {
+            textmatome.innerHTML = '마무리';  // Change text to '마토메'
+          });
+          textmatome.addEventListener('mouseout', function() {
+            textmatome.innerHTML = 'まとめ';  // Change text back to 'まとめ'
+          });
+        </script>
+
+      </header>
+    </div><!-- /#home -->
+    
+    
+    <div class="profile wrapper show">
+      <div class="profile-photo">
+        <img class="prop" src="images/profile.png" alt="pro-photo"> 
+      </div>
+      <div class="PR">
+        <h3 class="page-title1">永野 亜季</h3>
+        <h4 class="page-title2">나가노 아키</h4>
+        <h3>담당 동아리</h3>
+        <p>J-DX (IT 일본 취업 동아리)</p>
+        <h3>관련사업</h3>
+        <p>국가지원사업 해외취업 일본IT분야 코디네이터</p>
+        <h3>담당과목</h3>
+        <p>비즈니스일본어문서작성, IT실무일본어, 호텔실무일본어, 일본어한국어Tandem학습 I·II, 일본취업관련수업등, 일본어경어와비즈니스매너</p>
+        <h3>학력</h3>
+        <p>• ＜일본＞ 중앙대학 이공학부 응용화학학과 졸업</p>
+        <p>• ＜일본＞ 중앙대학 대학원 이공학연구과 응용화학전공 석사과정 졸업</p>
+        <p>• ＜한국＞ 대구 카톨릭대학교 대학원 일어일문학과 박사과정 수료</p>
+        <h3>경력</h3>
+        <p>• ＜일본＞ NTT컴웨어 주식회사, 시스템 엔지니어 근무</p>
+      </div>
+      
+      
+    </div><!-- /.profile -->
+    
+    
+    <footer>
+      <div class="wrapper">
+        <p class="footer"><small>© 2023 永野 亜季</small></p>
+      </div>
+    </footer>
+
+    <script>
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+            observer.unobserve(entry.target);
+          }
+        });
+      });
+  
+      const profileSection = document.querySelector('.profile.wrapper');
+      observer.observe(profileSection);
+    </script>
+
+  
+  
+</body></html>
