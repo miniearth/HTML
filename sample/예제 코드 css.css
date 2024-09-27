@@ -1,0 +1,342 @@
+@charset "UTF-8";
+
+/*
+---------------------------------------------*/
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "나눔고딕", NanumGothic, "맑은고딕", MalgunGothic, "Apple SD Gothic Neo", sans-serif;
+  line-height: 1.7;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* HEADER
+---------------------------------------------*/
+.logo {
+  width: 200px;
+  margin-top: 14px;
+}
+@media (max-width: 600px) {
+  
+}
+.main-nav {
+  display: flex;
+  font-size: 1.25rem;
+  font-family: 'Noto Sans JP', sans-serif;
+  text-transform: uppercase;
+  margin-top: 34px;
+  list-style: none;
+}
+
+.main-nav li {
+  margin-left: 36px;
+}
+
+.main-nav a {
+  color: black;
+
+}
+
+.main-nav a:hover {
+  color: #CE6668;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+/* HOME
+---------------------------------------------*/
+.home-content {
+  text-align: center;
+  margin-top: 10%;
+}
+
+.home-content p {
+  font-size: 1.125rem;
+  margin: 10px 0 42px;
+}
+
+/* 제목 */
+.page-title1 {
+  font-size: 2rem;
+  font-family: 'Noto Sans JP', sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+.page-title2 {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  font-weight: normal;
+  padding-bottom: 20px;
+}
+
+/* 버튼 */
+.button {
+  font-size: 1.2rem;
+  background: #da7f80;
+  color: #fff;
+  border-radius: 5px;
+  padding: 18px 32px;
+}
+
+.button:hover {
+  background: #CE6668;
+}
+
+/* 큰 배경 이미지 */
+.big-bg {
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+#home {
+  background-image: url(../images/main-bg.jpg);
+  background-blend-mode: luminosity;
+  min-height: 100vh;
+}
+
+.page-title {
+  margin-top: 20px;
+}
+
+/* NEWS
+---------------------------------------------*/
+#news {
+  background: #E1F6FA;
+  
+}
+
+
+
+/* FOOTER
+---------------------------------------------*/
+footer {
+  background: #64C4D4;
+  text-align: center;
+  padding: 26px 0;
+}
+
+footer p {
+  color: #fff;
+  font-size: 0.875rem;
+}
+
+/* 기사 부분 */
+article {
+  width: 74%;
+}
+
+/* 사이드바 */
+aside{
+  width: 22%;
+}
+
+.news-contents {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.profile {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.post-info {
+  position: relative;
+  padding-top: 4px;
+  margin-bottom: 40px;
+}
+
+.post-date span {
+  font-size: 1rem;
+  border-top: 1px rgba(255,255,255,.5) solid;
+  padding-top: 6px;
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.post-title {
+  font-family: "나눔명조", nanummyeongjo, serif;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.post-title,
+.post-cat {
+  margin-left: 120px;
+}
+
+article img {
+  margin-bottom: 20px;
+}
+
+article p {
+  margin-bottom: 1rem;
+}
+
+.sub-title {
+  font-size: 1.375rem;
+  padding: 0   8px 8px;
+  border-bottom: 2px #0bd solid;
+  font-weight: normal;
+}
+
+aside p {
+  padding: 12px 10px;
+}
+
+.sideBar {
+  padding: 35px;
+}
+
+.sub-menu {
+  margin-bottom: 60px;
+  list-style: none;
+}
+
+.sub-menu a{
+  color: black;
+}
+.sub-menu a:hover{
+  color:#CE6668;
+}
+.sub-menu li {
+  border-bottom: 1px #ddd solid;
+  
+}
+
+.prop {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  width: 600px;
+  height: auto;
+  padding-right: 10%;
+}
+
+
+.logo.custom-logo {
+  width: 200px;
+  height: auto;
+  object-fit: cover;
+}
+
+img {
+  width: 700px;
+  height: 400px;
+  object-fit: contain;
+}
+
+p {
+  text-align: justify;
+}
+
+.mainp{
+  text-align: center;
+}
+
+
+.profile.wrapper {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.profile.wrapper.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.footer{
+  text-align: center;
+}
+
+.konominaiyou{
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease; 
+}
+
+.konominaiyou.show{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.page-title{
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease; 
+}
+
+.page-title.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.zinseinaiyou{
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease; 
+}
+
+.zinseinaiyou.show{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.daigakunaiyou{
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease; 
+}
+
+.daigakunaiyou.show{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.kaisyanaiyou{
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease; 
+}
+
+.kaisyanaiyou.show{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.matomenaiyou{
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease; 
+}
+
+.matomenaiyou.show{
+  opacity: 1;
+  transform: translateY(0);
+}
