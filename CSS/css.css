@@ -102,14 +102,6 @@ img {
   background: #CE6668;
 }
 
-/* 큰 배경 이미지 */
-.big-bg {
-  background-size: cover;
-  background-position: center top;
-  background-repeat: no-repeat;
-}
-
-
 #begyong {
   background-image: url(../img/배경.jpg);
   background-size: cover; /* 화면 전체에 맞게 이미지 크기 조정 */
