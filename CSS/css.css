@@ -107,7 +107,7 @@ img {
 
 #begyong {
   background-image: url(../img/배경.jpg);
-  background-size: cover; /* 화면 전체에 맞게 이미지 크기 조정 */
+  background-size: contain; /* 화면 전체에 맞게 이미지 크기 조정 */
   background-position: center; /* 중앙 정렬 */
   background-repeat: no-repeat; /* 반복하지 않음 */
   background-attachment: fixed; /* 스크롤해도 배경 고정 */
