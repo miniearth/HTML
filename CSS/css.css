@@ -295,6 +295,10 @@ p {
   text-align: center;
   font-size: 24px !important;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 100px; /* 상단에서 100px 떨어짐 */
+  left: 50%;  /* 수평 중앙 */
+  transform: translateX(-50%); /* 수평 중앙 정렬 보정 */
 }
 
 
