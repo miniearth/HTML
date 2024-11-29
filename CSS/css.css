@@ -32,28 +32,53 @@ img {
 @media (max-width: 600px) {
   
 }
+/* 네비게이션 바 기본 스타일 */
 .main-nav {
   display: flex;
-  font-size: 1.25rem;
+  justify-content: center; /* 네비게이션 항목 중앙 정렬 */
+  font-size: 1.2rem; /* 적절한 크기 */
   font-family: 'Noto Sans JP', sans-serif;
-  text-transform: uppercase;
-  font-weight: bold;
-  margin-top: 34px;
-  list-style: none;
+  text-transform: uppercase; /* 모든 글자를 대문자로 변환 */
+  font-weight: 600; /* 약간 두꺼운 텍스트 */
+  margin-top: 30px;
+  list-style: none; /* 불필요한 목록 스타일 제거 */
+  padding: 0; /* 기본 여백 제거 */
 }
 
+/* 리스트 항목 스타일 */
 .main-nav li {
-  margin-left: 36px;
+  margin: 0 24px; /* 좌우 간격 균일화 */
 }
 
+/* 링크 기본 스타일 */
 .main-nav a {
   color: black;
-
+  text-decoration: none; /* 밑줄 제거 */
+  padding: 8px 12px; /* 클릭 영역 확대 */
+  border-radius: 4px; /* 약간의 둥근 테두리 추가 */
+  transition: all 0.3s ease; /* 부드러운 전환 효과 */
 }
 
+/* 링크 호버 스타일 */
 .main-nav a:hover {
-  color: #CE6668;
+  color: white; /* 글자 색상을 흰색으로 변경 */
+  background-color: #CE6668; /* 배경색을 강조 색으로 변경 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 호버 시 그림자 추가 */
+  transform: scale(1.05); /* 살짝 확대 효과 */
 }
+
+/* 모바일 대응 */
+@media (max-width: 768px) {
+  .main-nav {
+    flex-direction: column; /* 세로로 배치 */
+    align-items: center; /* 항목 중앙 정렬 */
+  }
+
+  .main-nav li {
+    margin: 12px 0; /* 위아래 간격 조정 */
+  }
+}
+
 
 .page-header {
   display: flex;
@@ -94,15 +119,16 @@ img {
 
 /* 버튼 */
 .button {
-  font-size: 1.2rem;
-  background: #da7f80;
-  color: #fff;
-  border-radius: 5px;
-  padding: 18px 32px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 37px;
+  color: #799dec;
+  text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.32), 0px 1px 0px #6182ca, 0px 2px 0px #4f6aa7, 0px 3px 0px #5470ad;
 }
 
-.button:hover {
-  background: #CE6668;
+.button:active {
+  top: 4px;
+  text-shadow: none;
 }
 
 #begyong {
@@ -250,13 +276,25 @@ img {
   object-fit: contain;
 }
 
+h2{
+  border-bottom : solid 3px black;
+}
+
+h3{
+  color : #6594e0 ; /* 문자색*/ 
+  border-bottom : dashed 2px  #6594e0 ;
+}
+
 p {
   text-align: justify;
 }
 
 .mainp{
+  color: #2C3E50;
   font-weight: bold;
   text-align: center;
+  font-size: 24px !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 
