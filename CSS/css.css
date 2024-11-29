@@ -95,12 +95,12 @@ img {
 ---------------------------------------------*/
 .home-content {
   text-align: center;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 .home-content p {
   font-size: 1.125rem;
-  margin: 10px 0 42px;
+  margin: 10px 0 20px;
 }
 
 /* 제목 */
@@ -138,6 +138,32 @@ img {
   background-repeat: no-repeat; /* 반복하지 않음 */
   background-attachment: fixed; /* 스크롤해도 배경 고정 */
   min-height: 100vh; /* 최소 높이를 뷰포트 높이에 맞춤 */
+}
+
+#begyong::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: inherit; /* 부모의 배경을 상속받음 */
+  filter: blur(10px); /* 흐림 효과 적용 */
+  z-index: -1; /* 부모 요소 뒤로 배치 */
+}
+
+.image-button-container {
+  display: flex;
+  flex-direction: column; /* 이미지를 위, 버튼을 아래에 배치 */
+  align-items: center; /* 중앙 정렬 */
+  margin-top: 10px; /* p와의 간격 */
+}
+
+.inserted-image{
+  max-width: 300px; /* 이미지 크기 제한 */
+  width: 100%; /* 부모 요소에 맞게 크기 조정 */
+  height: auto; /* 원본 비율 유지 */
+  margin-bottom: 10px; /* 이미지와 버튼 사이 간격 */
 }
 
 .page-title {
@@ -290,15 +316,12 @@ p {
 }
 
 .mainp{
-  color: #0a0a0a;
-  font-weight: bold;
-  text-align: center;
-  font-size: 24px !important;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  position: absolute;
-  top: 100px; /* 상단에서 100px 떨어짐 */
-  left: 50%;  /* 수평 중앙 */
-  transform: translateX(-50%); /* 수평 중앙 정렬 보정 */
+    color: #0a0a0a;
+    font-weight: bold;
+    text-align: center;
+    font-size: 24px !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 20px auto; /* 중앙 정렬과 여백 추가 */
 }
 
 
