@@ -95,7 +95,7 @@ img {
 ---------------------------------------------*/
 .home-content {
   text-align: center;
-  margin-top: 5%;
+  
 }
 
 .home-content p {
@@ -156,7 +156,7 @@ img {
   display: flex;
   flex-direction: column; /* 이미지를 위, 버튼을 아래에 배치 */
   align-items: center; /* 중앙 정렬 */
-  margin-top: 10px; /* p와의 간격 */
+  
 }
 
 .inserted-image{
