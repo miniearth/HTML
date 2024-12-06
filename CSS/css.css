@@ -137,6 +137,7 @@ img {
   background-position: center; /* 중앙 정렬 */
   background-repeat: no-repeat; /* 반복하지 않음 */
   background-attachment: fixed; /* 스크롤해도 배경 고정 */
+  background-blend-mode: overlay;
   min-height: 100vh; /* 최소 높이를 뷰포트 높이에 맞춤 */
 }
 
@@ -148,7 +149,7 @@ img {
   right: 0;
   bottom: 0;
   background: inherit; /* 부모의 배경을 상속받음 */
-  filter: blur(10px); /* 흐림 효과 적용 */
+   
   z-index: -1; /* 부모 요소 뒤로 배치 */
 }
 
@@ -160,6 +161,7 @@ img {
 }
 
 .inserted-image{
+  mix-blend-mode: multiply; /* 블렌드 모드 설정 */
   max-width: 300px; /* 이미지 크기 제한 */
   width: 100%; /* 부모 요소에 맞게 크기 조정 */
   height: auto; /* 원본 비율 유지 */
