@@ -139,7 +139,7 @@ img {
   background-attachment: fixed; /* 스크롤해도 배경 고정 */
   
   min-height: 100vh; /* 최소 높이를 뷰포트 높이에 맞춤 */
-  opacity: 0.8;
+  opacity: 0.9;
   position: relative; /* 기본 배경 */
   z-index: 1;
 }
