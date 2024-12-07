@@ -151,7 +151,6 @@ img {
   right: 0;
   bottom: 0;
   background: inherit; /* 부모의 배경을 상속받음 */
-   
   z-index: -1; /* 부모 요소 뒤로 배치 */
 }
 
@@ -163,7 +162,6 @@ img {
 }
 
 .inserted-image{
-  
   max-width: 300px; /* 이미지 크기 제한 */
   width: 100%; /* 부모 요소에 맞게 크기 조정 */
   height: auto; /* 원본 비율 유지 */
